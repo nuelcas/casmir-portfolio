@@ -1,0 +1,234 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+
+body{
+  
+  min-height: none;
+  min-width: 100vw;
+  font-family: 'Lato', cursive;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+@media (max-width: 62.25em){
+  html{
+    font-size: 55%;
+  }
+}
+
+
+a{
+  text-decoration: none;
+  color: rgb(33, 12, 228);
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  font-size: 0.2em;
+  background-color: white;
+}
+
+.nav-list{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  margin: 1rem;
+  margin-right: 1.8rem; 
+}
+
+.nav-list a{
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem; 
+}
+
+.nav-list a:hover{
+  color: #080125;
+}
+
+.banner-text{
+  color: whitesmoke;
+  padding-top: 55px;
+  margin: 0;
+  left: 0;
+  top: 0;
+  min-width: 100vw;
+  margin-left: 0;
+  border: none;
+  background-color: rgba(77, 100, 114, 0.973);
+}
+
+.responsive-headline{
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.teach-phil{
+  text-align: center;
+}
+
+
+#philosophy{
+  padding-left: 180px;
+  padding-right: 150px;
+  margin-top: 15px;
+  text-justify: newspaper;
+}
+
+#about{
+  
+  padding-left: 3px;
+  margin-top: 45px;
+  padding-right: 10px;
+  font-size: 16px;
+  background-color: rgb(212, 221, 230);
+}
+
+img{
+  float: left;
+  margin-right: 15px;
+}
+
+
+
+.main-col{
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.resume{
+  padding-left: 205px;
+  margin-top: -10px;
+  text-decoration: solid;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+#certedu{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-left: 80px;
+}
+
+#certifications{
+  float: right;
+  padding-right: 120px;
+  
+}
+
+.close{
+  margin-bottom: -10px;
+}
+
+h1{
+  font-family: 'Lato', cursive;
+  font-size: 1.5rem;
+}
+
+h3{
+  color:rgb(142, 142, 238);
+  margin-bottom: -10px;
+}
+
+#skills{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.skill_text{
+  padding-left: 20px;
+  text-justify: newspaper;
+  padding-right: 30px;
+}
+
+.btn{
+  color:blue;
+}
+
+.lead{
+  padding-left: 300px;
+  padding-top: 15px;
+  font-style: italic;
+}
+
+form{
+  padding-left: 35%;
+  width: 100%;
+  height: 450px;
+  border: none;
+  color: whitesmoke;
+  background-color: rgb(19, 15, 15);
+}
+
+fieldset {
+  border: none;
+}
+
+.address{
+  margin-bottom: -10px;
+  padding-top: 20px;
+}
+
+input{
+  height: 30px;
+  width: 300px;
+}
+
+textarea{
+  width: 300px;
+  height: 120px;
+}
+
+button{
+  height: 30px;
+  width: 80px;
+  position: relative;
+  left: 100px;
+  font-size: 1.2rem;
+  color:#162cee;
+  
+}
+
+.social{
+  padding-top: 0px;
+}
+
+.socialLink{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  
+  height: 30px;
+}
+
+.contact-details:hover{
+  transform: translateY(5px);
+}
+
+footer{
+  height: 5px;
+  font-weight: 3;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding:0;
+  margin-bottom: 40px;
+  border-top: 4px solid black;
+}
+
+.styleshout{
+  color:blue;
+}
+
+
