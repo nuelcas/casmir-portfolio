@@ -224,13 +224,4 @@ footer{
   color:blue;
 }
 
-@media screen and (max-width: 700px){
-  #philosophy{
-    width: 100%;
-    padding: 10px;
-  }
-  .nav{
-    display: none;
-  }
-}
 
