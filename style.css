@@ -1,13 +1,21 @@
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
-
+html{
+  box-sizing: border-box;
+}
 
 body{
-  min-height: none;
-  min-width: 100vw;
-  font-family: 'Lato', cursive;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-size: 18px;
+  font-family: Open Sans, Roboto;
   background-color: whitesmoke;
   overflow-x: hidden;
-  margin: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+p{
+  line-height: 1.5;
 }
 
 a{
@@ -15,15 +23,11 @@ a{
   color: rgb(33, 12, 228);
 }
 
-.nav{
-  display: flex;
-  justify-content: flex-end;
+#nav-bar{
   position:fixed;
-  top: 0;
-  left: 0;
   width: 100%;
+  margin-top: -15px;
   height: 60px;
-  font-size: 0.2em;
   background-color: white;
 }
 
@@ -31,73 +35,60 @@ a{
   list-style: none;
   text-decoration: none;
   display: flex;
-  margin: 1rem;
-  margin-right: 1.8rem; 
+  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .nav-list a{
-  display: block;
-  font-size: 1.5rem;
-  padding: 0.5rem; 
+  font-size: 1rem; 
 }
 
 .nav-list a:hover{
   color: #080125;
 }
 
-.banner-text{
-  color: whitesmoke;
-  padding-top: 55px;
-  margin: 0;
-  left: 0;
-  top: 0;
-  min-width: 100vw;
-  margin-left: 0;
-  border: none;
-  background-color: rgba(77, 100, 114, 0.973);
-}
-
 .responsive-headline{
+  padding-top: 50px;
   padding-left: 25px;
-  font-size: 20px;
+  margin-right: 0px;
+  font-size: 25px;
+  background-color: rgb(212, 221, 230);
 }
 
 .teach-phil{
   text-align: center;
 }
 
-
 #philosophy{
-  padding-left: 180px;
-  padding-right: 150px;
-  margin-top: 15px;
-  text-justify: newspaper;
+  justify-content: center;
+  padding: 0px 150px;
+
 }
 
 #about{
-  
-  padding-left: 3px;
-  margin-top: 45px;
-  padding-right: 10px;
+  padding: 3px;
+  margin-top: 50px;
+  margin-left: 0px;
   font-size: 16px;
+}
+
+.row{
   background-color: rgb(212, 221, 230);
 }
 
 img{
   float: left;
-  margin-right: 15px;
+  margin-right: 20px;
 }
-
-
 
 .main-col{
   text-align: justify;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 25px;
+  margin-top: 0px;
 }
 
-.resume{
-  padding-left: 205px;
+.resume{ 
   margin-top: -10px;
   text-decoration: solid;
   font-weight: bold;
@@ -114,8 +105,7 @@ img{
 
 #certifications{
   float: right;
-  padding-right: 120px;
-  
+  padding-right: 120px; 
 }
 
 .close{
@@ -123,7 +113,6 @@ img{
 }
 
 h1{
-  font-family: 'Lato', cursive;
   font-size: 1.5rem;
 }
 
@@ -148,23 +137,23 @@ h3{
   color:blue;
 }
 
-.lead{
-  padding-left: 300px;
+#lead{
+  padding-left: 165px;
   padding-top: 15px;
   font-style: italic;
 }
 
 form{
-  padding-left: 35%;
   width: 100%;
-  height: 450px;
-  border: none;
   color: whitesmoke;
-  background-color: rgb(19, 15, 15);
 }
+ 
 
 fieldset {
-  border: none;
+  justify-items: center;
+  border: none;  
+  align-items: center;
+  background-color: rgb(19, 15, 15);
 }
 
 .address{
@@ -185,11 +174,8 @@ textarea{
 button{
   height: 30px;
   width: 80px;
-  position: relative;
-  left: 100px;
   font-size: 1.2rem;
   color:#162cee;
-  
 }
 
 .social{
@@ -200,7 +186,6 @@ button{
   display: flex;
   justify-content: space-evenly;
   font-size: 18px;
-  
   height: 30px;
 }
 
@@ -223,13 +208,16 @@ footer{
   color:blue;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 590px){
+  .form{
+    padding-left: 50px;
+  }
   #philosophy{
-    width: 100%;
-    padding: 10px;
+    width: auto;
   }
   .nav{
     display: none;
   }
+  
 }
-
+  
