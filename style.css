@@ -209,11 +209,8 @@ footer{
 }
 
 @media screen and (max-width: 590px){
-  .form{
-    padding-left: 50px;
-  }
   #philosophy{
-    width: auto;
+    padding: 0px;
   }
   .nav{
     display: none;
