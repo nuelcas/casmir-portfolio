@@ -1,108 +1,147 @@
-
-
-html{
-    box-sizing: border-box;
-    background-color: white;
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    font-family: 'lato' cursive;
-    height: 85%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 1000px;   
-    padding: 20px;
-    color: black;
-    background-color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}    
-
-
-.name{
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: -20px;
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  line-height: 1.6;
+  color: #333;
+  width: 21cm; /* A4 width */
+  height: 29.7cm; /* A4 height */
+  margin: 0 7cm; /* Margin around the page */
+  background: #fff;
 }
 
-.job{
-    font-size: 1.5rem;
-    color: rgb(52, 52, 190);
+header {
+  max-width: 800px;
+  margin: 40px;
 }
 
-.job_title{
-    margin-bottom: -20px;
-   
-
+/* Header */
+.head_name {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.school_name{
-    font-size: 1.5em;
-    font-weight: lighter;
-    margin-bottom: -18px;
+#main {
+  margin-left: 100px;
+  margin-right: 50px;
 }
 
-ul{
-    margin-bottom: -10px;
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.hardskills{
-    margin-top: -15px;
+.heading::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: black;
 }
 
-.contact{
-   
-    margin-bottom: 7px;
+.job {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.close{
-    padding-left: 150px;
+.contact {
+  font-size: 14px;
 }
 
-.heading{
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: -10px;
-    font-weight: solid bold;
-    border-bottom: 4px solid black;
+.contact a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
-.cert{
-    margin-top: 25px;
+.close {
+  margin-left: 10px;
 }
 
-i{
-    color: gray;
-    font: curative;
+.close i {
+  margin-right: 5px;
 }
 
-.location{
-    padding-left: 35px;
+/* Objectives */
+div h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    
+/* Education */
+.uni p {
+  margin-bottom: 10px;
 }
 
-.sect1{
-    float: left;
+/* Professional Experience */
+.sect1 ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
-.sect2{
-    float: left;
-    padding-left: 50px;
+.job_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-@media screen and (max-width: 700px){
-    .head_name{
-        float: left;
-        font-size: 12px;
-    }
+/* Skills */
+.skills ul {
+  list-style: square;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
+/* Projects */
+div h1 + ul {
+  list-style: square;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Certifications */
+.certifications ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* References */
+div h1:last-child {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .job {
+    font-size: 16px;
+  }
+}
